@@ -22,3 +22,5 @@ WHERE
 SELECT name, escape_attempts FROM animals WHERE weight_kg > 10.5;
 
 SELECT * FROM animals WHERE neutered = true;
+
+SELECT * FROM animals WHERE NOT name = 'Gabumon';
