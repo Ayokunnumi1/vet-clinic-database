@@ -9,3 +9,10 @@ Create table animals (
     neutered boolean,
     weight_kg decimal
 );
+
+CREATE TABLE owners (
+    ID int NOT NULL,
+    full_name text NOT NULL,
+    age int,
+    PRIMARY KEY (ID)
+);
