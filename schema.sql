@@ -24,3 +24,8 @@ CREATE TABLE species (
 );
 
 ALTER TABLE animals ADD PRIMARY KEY (id);
+
+#Firstly add a new column to the animals table, then add a foreign key constraint
+ALTER TABLE animals ADD species_id int;
+ALTER TABLE animals
+ADD FOREIGN KEY (species_id) REFERENCES species (id);
