@@ -22,3 +22,5 @@ CREATE TABLE species (
     name text NOT NULL,
     PRIMARY KEY (ID)
 );
+
+ALTER TABLE animals ADD PRIMARY KEY (id);
