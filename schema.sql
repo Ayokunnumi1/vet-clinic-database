@@ -36,3 +36,13 @@ ADD FOREIGN KEY (species_id) REFERENCES species (id);
 -- Add column owner_id which is a foreign key referencing the owners table
 ALTER TABLE animals ADD owner_id int;
 ALTER TABLE animals ADD FOREIGN KEY (owner_id) REFERENCES owners (id);
+
+
+INSERT INTO
+    owners (id, full_name, age)
+VALUES (1, 'Sam Smith', 34),
+    (2, 'Jennifer Orwell', 19),
+    (3, 'Bob', 45),
+    (4, 'Melody Pond', 77),
+    (5, 'Dean Winchester', 14),
+    (6, 'Jodie Whittaker', 38);
