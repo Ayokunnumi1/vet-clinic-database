@@ -16,3 +16,9 @@ CREATE TABLE owners (
     age int,
     PRIMARY KEY (ID)
 );
+
+CREATE TABLE species (
+    ID int NOT NULL,
+    name text NOT NULL,
+    PRIMARY KEY (ID)
+);
