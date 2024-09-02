@@ -10,6 +10,9 @@ Create table animals (
     weight_kg decimal
 );
 
+
+
+-- This schema is for the second project task 
 CREATE TABLE owners (
     ID int NOT NULL,
     full_name text NOT NULL,
@@ -29,3 +32,7 @@ ALTER TABLE animals ADD PRIMARY KEY (id);
 ALTER TABLE animals ADD species_id int;
 ALTER TABLE animals
 ADD FOREIGN KEY (species_id) REFERENCES species (id);
+
+-- Add column owner_id which is a foreign key referencing the owners table
+ALTER TABLE animals ADD owner_id int;
+ALTER TABLE animals ADD FOREIGN KEY (owner_id) REFERENCES owners (id);
