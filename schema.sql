@@ -46,3 +46,7 @@ VALUES (1, 'Sam Smith', 34),
     (4, 'Melody Pond', 77),
     (5, 'Dean Winchester', 14),
     (6, 'Jodie Whittaker', 38);
+
+
+-- Insert the following data into the species table
+Insert into species Values (1, 'Pokemon'), (2, 'Digimon');
