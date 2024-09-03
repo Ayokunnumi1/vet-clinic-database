@@ -27,7 +27,6 @@ SELECT * FROM animals WHERE NOT name = 'Gabumon';
 
 SELECT * FROM animals WHERE weight_kg between 10.4 and 17.3;
 
-
 -- Queries for the second task
 
 -- What animals belong to Melody Pond ?
@@ -36,3 +35,12 @@ FROM animals
     INNER JOIN owners ON animals.owner_id = owners.ID
 WHERE
     owner_id = 4;
+
+-- List of all animals that are pokemon (their type is Pokemon).
+SELECT
+    animals.name As "Animal Name",
+    species.name As "Animal Specie"
+FROM animals
+    INNER JOIN species ON animals.species_id = species.ID
+WHERE
+    species.name = 'Pokemon';
