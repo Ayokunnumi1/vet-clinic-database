@@ -38,15 +38,3 @@ ALTER TABLE animals ADD owner_id int;
 ALTER TABLE animals ADD FOREIGN KEY (owner_id) REFERENCES owners (id);
 
 
-INSERT INTO
-    owners (id, full_name, age)
-VALUES (1, 'Sam Smith', 34),
-    (2, 'Jennifer Orwell', 19),
-    (3, 'Bob', 45),
-    (4, 'Melody Pond', 77),
-    (5, 'Dean Winchester', 14),
-    (6, 'Jodie Whittaker', 38);
-
-
--- Insert the following data into the species table
-Insert into species Values (1, 'Pokemon'), (2, 'Digimon');
