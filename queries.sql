@@ -26,3 +26,13 @@ SELECT * FROM animals WHERE neutered = true;
 SELECT * FROM animals WHERE NOT name = 'Gabumon';
 
 SELECT * FROM animals WHERE weight_kg between 10.4 and 17.3;
+
+
+-- Queries for the second task
+
+-- What animals belong to Melody Pond ?
+SELECT name
+FROM animals
+    INNER JOIN owners ON animals.owner_id = owners.ID
+WHERE
+    owner_id = 4;
