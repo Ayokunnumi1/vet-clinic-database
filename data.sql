@@ -146,7 +146,7 @@ SET
 WHERE
     name = 'Angemon'
     OR name = 'Boarmon';
-    
+
 -- Insert the following data for vets
 Insert into
     vets (name, age, date_of_graduation)
@@ -170,3 +170,10 @@ values (
         38,
         '2008-06-08'
     );
+-- Insert the following data for specializations
+Insert into
+    specialization (species_id, vets_id)
+values (1, 1),
+    (1, 3),
+    (2, 3),
+    (2, 4);
