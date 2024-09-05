@@ -57,3 +57,13 @@ create table specialization (
     Constraint fk_vets Foreign key (vets_id) references vets (id),
     PRIMARY KEY (species_id, vets_id)
 );
+
+-- Create a "join table" called visits to handle this relationship
+create table visits (
+    animals_id INT,
+    vets_id INT,
+    date_of_visits date,
+    Constraint fk_animals Foreign key (animals_id) references animals (id),
+    Constraint fk_vets Foreign key (vets_id) references vets (id),
+    PRIMARY KEY (animals_id, vets_id)
+);
