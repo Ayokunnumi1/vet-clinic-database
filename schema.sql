@@ -67,3 +67,5 @@ create table visits (
     Constraint fk_vets Foreign key (vets_id) references vets (id),
     PRIMARY KEY (animals_id, vets_id)
 );
+
+-- Normalization is a technique that allows us to take a database and make it more maintainable, less error-prone, and more performant.
