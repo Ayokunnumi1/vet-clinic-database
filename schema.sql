@@ -68,4 +68,4 @@ create table visits (
     PRIMARY KEY (animals_id, vets_id)
 );
 
--- Normalization is a technique that allows us to take a database and make it more maintainable, less error-prone, and more performant.
+-- An index is a structure that holds the field the index is sorting and a pointer from each record to their corresponding record in the original table where the data is actually stored. 
