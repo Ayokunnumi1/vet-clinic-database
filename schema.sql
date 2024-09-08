@@ -69,3 +69,4 @@ create table visits (
 );
 
 -- An index is a structure that holds the field the index is sorting and a pointer from each record to their corresponding record in the original table where the data is actually stored. 
+-- ERD - This defines the structural design of the database
